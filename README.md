@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my first Rails Application which I'll build from scratch during the next CareerFoundry Ruby/Rails lessons
 
 Things you may want to cover:
 
