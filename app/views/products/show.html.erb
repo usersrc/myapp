@@ -2,11 +2,19 @@
 
 <div class="product_container">
   <p><%= @product.image_url %></p>
+  <p>
+    <strong>Color:</strong>
+    <%= @product.colour %>
+  </p>
   <br>
-  <p class="product_name"><strong><%= @product.name %></strong></p>
+  <p class="product_name">
+    <strong><%= @product.name %></strong>
+  </p>
   <br>
   <p><%= @product.description %></p>
+  <p><%= @product.price %></p>
 </div>
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
