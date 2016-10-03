@@ -22,6 +22,13 @@
           <li><%= link_to "Bike 1", product_path(1) %></li>
           <li><%= link_to "Bike 3", product_path(3) %></li>
         </ul>
+        <div class="search">
+          <%= form_tag("/products", method: "get", class: "navbar-form navbar-left", role: "search") do %>
+            <!-- <%= label_tag(:q, "Search for:") %> -->
+            <%= text_field_tag(:q, "", class: "form-control") %>
+            <%= submit_tag("Search", class: "btn btn-default") %>
+          <% end %>
+        </div>
       </div>
     </nav>
 

@@ -1,11 +1,6 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-table,
-.new_product,
-.edit_product {
-  background-color: #66cb66;
-}
 
 thead>tr {
   height: 50px;
@@ -14,6 +9,10 @@ thead>tr {
 thead>tr>th {
   padding-left: 5px;
   color: #fff;
+}
+
+.field {
+  width: 420px;
 }
 
 .product_container {
