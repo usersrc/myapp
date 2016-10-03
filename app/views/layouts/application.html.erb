@@ -13,14 +13,14 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">MyApp</a>
+          <%= link_to "MyApp", static_pages_landing_page_path, :class => "navbar-brand" %>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Placeholder 1</a></li>
-          <li><a href="#">Placeholder 2</a></li>
+          <li class="active"><%= link_to "Home", static_pages_index_path %></li>
+          <li><%= link_to "About", static_pages_about_path %></li>
+          <li><%= link_to "Contact", static_pages_contact_path %></li>
+          <li><%= link_to "Bike 1", product_path(1) %></li>
+          <li><%= link_to "Bike 3", product_path(3) %></li>
         </ul>
       </div>
     </nav>
