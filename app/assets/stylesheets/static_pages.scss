@@ -11,6 +11,10 @@ h1 {
   text-align: center;
 }
 
+.contact-container {
+  max-width: 768px;
+}
+
 .navbar {
   background-color: #00A900;
 }
@@ -40,4 +44,8 @@ h1 {
 .navbar-fixed-bottom
 .container>p {
   margin: 20px 0;
+}
+
+.search {
+  float: right;
 }

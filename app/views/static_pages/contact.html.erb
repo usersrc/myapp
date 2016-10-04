@@ -1,2 +1,25 @@
-<h1>Say hello!</h1>
-<p>Banh mi master cleanse freegan microdosing fanny pack skateboard, cronut coloring book yuccie paleo cliche. Seitan single-origin coffee ennui, kombucha trust fund drinking vinegar DIY flannel jean shorts taxidermy sartorial. Glossier occupy trust fund, coloring book neutra scenester +1. Vinyl fingerstache snackwave cold-pressed subway tile. Hoodie blog fap art party, pabst lyft typewriter meditation wayfarers vegan salvia. Gentrify bicycle rights master cleanse, ennui waistcoat af skateboard 3 wolf moon vinyl flannel succulents flexitarian put a bird on it kinfolk. Lyft af vice echo park put a bird on it, hashtag VHS wayfarers you probably haven't heard of them bicycle rights trust fund paleo selfies.</p>
+<h1>Contact Us</h1>
+
+<%= flash[:notice] %>
+
+<div class="container contact-container">
+  <%= form_tag("/static_pages/thank_you") do %>
+  <div class="row">
+    <div class="offset4 span4">
+      <div class="form-group">
+        <%= label_tag :name %>
+        <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+      </div>
+      <div class="form-group">
+        <%= label_tag :email, "Email Address" %>
+        <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+      </div>
+      <div class="form-group">
+        <%= label_tag :message %>
+        <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+      </div>
+    </div>
+  </div>
+  <%= submit_tag "Send", class: "btn btn-default" %>
+</div>
+<% end %>
