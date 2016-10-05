@@ -1,20 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<div class="product_container">
-  <p><%= @product.image_url %></p>
-  <p>
-    <strong>Color:</strong>
-    <%= @product.colour %>
-  </p>
-  <br>
-  <p class="product_name">
+<div class="product-container">
+  <p><%= image_tag("#{@product.image_url}", class: "img-responsive") %></p>
+  <p class="product-name">
     <strong><%= @product.name %></strong>
   </p>
+  <div class="color-container">
+    <strong>Color:</strong>
+    <%= @product.colour %>
+  </div>
   <br>
   <p><%= @product.description %></p>
-  <p><%= @product.price %></p>
+  <br>
+  <div class="price-container">
+    <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+    <%= @product.price %>
+  </div>
+  <hr>
+  <%= @product.highest_rating_comment %>
 </div>
-
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
