@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'will_paginate', '~> 3.1.0'
 gem 'cancancan', '~> 1.10'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
