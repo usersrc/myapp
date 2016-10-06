@@ -5,19 +5,23 @@
   <p class="product-name">
     <strong><%= @product.name %></strong>
   </p>
+  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+  <br>
+  <p><%= @product.description %></p>
+  <br>
   <div class="color-container">
     <strong>Color:</strong>
     <%= @product.colour %>
   </div>
-  <br>
-  <p><%= @product.description %></p>
   <br>
   <div class="price-container">
     <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
     <%= @product.price %>
   </div>
   <hr>
-  <%= @product.highest_rating_comment %>
+  <!-- <%= @product.highest_rating_comment %> -->
+  <%= render "products/new_comment" %>
+  <%= render "products/comments" %>
 </div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
