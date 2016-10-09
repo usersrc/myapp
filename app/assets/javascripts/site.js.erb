@@ -1,7 +1,7 @@
 $(document).on('turbolinks:load', function(){
     $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
     // $('.rated').raty({ path: '/assets',
-    $('.rated').raty({ path: "<%= asset_path('/assets') %>",
+    $('.rated').raty({ path: "<%= asset_path '/assets' %>",
       readOnly: true,
       score: function() {
         return $(this).attr('data-score');
