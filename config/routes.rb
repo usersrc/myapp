@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :comments
   end
   resources :users
+  resources :payments, only:[:create]
 
   get 'static_pages/about'
   get 'static_pages/contact'
