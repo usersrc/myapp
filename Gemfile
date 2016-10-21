@@ -62,3 +62,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails_12factor', group: :production
 gem 'rails-controller-testing'
 gem "brakeman", :require => false
+gem 'memcachier'
+gem 'dalli'
