@@ -83,7 +83,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
+  config.web_socket_server_url = "wss://usersrc.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://usersrc.herokuapp.com', 'http://usersrc.herokuapp.com']
   config.cache_store = :dalli_store,
                     (ENV["MEMCACHIER_SERVERS"] || "").split(","),
                     {:username => ENV["MEMCACHIER_USERNAME"],
