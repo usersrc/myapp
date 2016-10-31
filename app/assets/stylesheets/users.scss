@@ -5,3 +5,15 @@
 .remember-me {
   display: inline-block;
 }
+
+.carousel img {
+  width: auto;
+  height: 640px;
+  max-height: 645px;
+  margin: 0 auto;
+}
+
+.carousel-indicators li {
+  border: 1px solid #000;
+  color: #6f6f6f;
+}
